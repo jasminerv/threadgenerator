@@ -1,8 +1,11 @@
 # threadgenerator
 Generate a thread of synthetic messages from the perspective of a specific persona writing every day for a selected number of months.
-This program outputs a CSV of messages that are a cohesive thread on a specific topic in chronological order. 
+
+This program outputs a CSV of messages that are a cohesive thread on a specific topic in chronological order.
+
 When configuring a new set of thread parameters, you will be prompted to select number of max notes a day, this number will be used to 
 determine how many notes will be generated on a certain day for the persona (between one and the max number chosen)
+
 Each row contains its message, a date/time, thread name, and notebook name. 
 ## Requirements
 ```
