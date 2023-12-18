@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Thread</title>
+    <style>
+        /* CSS for the progress spinner */
+        #loading-spinner {
+            display: none; /* Initially hidden */
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate Thread</h1>
+    <form method="post" onsubmit="showLoadingSpinner()">
+        <label for="selected_persona">Select Persona:</label>
+        <select name="selected_persona" id="selected_persona">
+            {% for persona in personas %}
+                <option value="{{ persona.name_first }} {{ persona.name_last }}">{{ persona.name_first }} {{ persona.name_last }}</option>
+            {% endfor %}
+        </select>
+
+        <br><br>
+        <label for="selected_thread_params">Select Thread Parameters:</label>
+        <select name="selected_thread_params" id="selected_thread_params">
+            {% for thread_param in thread_params %}
+                <option value="{{ thread_param.name_thread }}">{{ thread_param.name_thread }} - {{ thread_param.thread_description }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Generate Thread">
+        <!-- Loading spinner -->
+        <div id="loading-spinner"></div>
+    </form>
+    <a href="/">Back to Home</a>
+
+    <script>
+        // Function to display the loading spinner
+        function showLoadingSpinner() {
+            const loadingSpinner = document.getElementById('loading-spinner');
+            loadingSpinner.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

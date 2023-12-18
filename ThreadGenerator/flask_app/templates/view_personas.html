@@ -1,0 +1,18 @@
+<!-- view_personas.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Personas</title>
+</head>
+<body>
+    <h1>Personas</h1>
+    <ul>
+        {% for persona in personas %}
+            <li>Name:{{ persona.name_first }} {{ persona.name_last }}-Age:{{persona.age}}-Personality Type {{persona.personality_type}} -Career & Career State :{{ persona.career }} {{persona.career_state}}-</li>
+            <!-- Add more details as needed -->
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>

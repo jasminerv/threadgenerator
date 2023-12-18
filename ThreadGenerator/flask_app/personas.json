@@ -1,0 +1,41 @@
+[
+    {
+        "name_first": "Frankie",
+        "name_last": "Rivero",
+        "age": 27,
+        "place_residence": "San Francisco, CA",
+        "place_birth": "Livermore, CA",
+        "hobbies": "Sleeping, Running around, screaming",
+        "personality_type": "Very friendly, extroverted",
+        "career": "Independently wealthy",
+        "career_state": "Late ",
+        "partnered": false,
+        "partner_name": null
+    },
+    {
+        "name_first": "Melshi",
+        "name_last": "Smith ",
+        "age": 32,
+        "place_residence": "San Rafael, CA",
+        "place_birth": "Boston, MA ",
+        "hobbies": "Calligraphy, Self care, bird watching",
+        "personality_type": "Introverted, ISTJ",
+        "career": "Exterminator (Pest Control) ",
+        "career_state": "Mid ",
+        "partnered": true,
+        "partner_name": "Barney Catton"
+    },
+    {
+        "name_first": "John",
+        "name_last": "Shmon",
+        "age": 47,
+        "place_residence": "Los Angeles, CA",
+        "place_birth": "Baton Rouge, LA",
+        "hobbies": "Cycling, reading ",
+        "personality_type": "energetic and action-oriented, deftly navigating whatever is in front of them. They love uncovering life\u2019s opportunities, whether socializing with others or in more personal pursuits",
+        "career": "Clown",
+        "career_state": "Late",
+        "partnered": true,
+        "partner_name": "Jane Doe"
+    }
+]

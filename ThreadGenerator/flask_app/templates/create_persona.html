@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Persona</title>
+    <script>
+        function togglePartnerName() {
+            var checkbox = document.getElementById("partnered");
+            var partnerNameDiv = document.getElementById("partner_name_div");
+            partnerNameDiv.style.display = checkbox.checked ? "block" : "none";
+        }
+
+        window.onload = function() {
+            // Initialize the display based on the checkbox state when the page loads
+            togglePartnerName();
+        };
+    </script>
+</head>
+<body>
+    <h1>Create a New Persona</h1>
+    <form method="POST">
+        <label for="name_first">First Name:</label>
+        <input type="text" id="name_first" name="name_first" required><br><br>
+
+        <label for="name_last">Last Name:</label>
+        <input type="text" id="name_last" name="name_last" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="place_residence">Place of Residence:</label>
+        <input type="text" id="place_residence" name="place_residence" required><br><br>
+
+        <label for="place_birth">Place of Birth:</label>
+        <input type="text" id="place_birth" name="place_birth" required><br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies" required><br><br>
+
+        <label for="personality_type">Personality Type:</label>
+        <input type="text" id="personality_type" name="personality_type" required><br><br>
+
+        <label for="career">Career:</label>
+        <input type="text" id="career" name="career" required><br><br>
+
+        <label for="career_state">Career State:</label>
+        <input type="text" id="career_state" name="career_state" required><br><br>
+
+        <label for="partnered">Partnered:</label>
+        <input type="checkbox" id="partnered" name="partnered" onchange="togglePartnerName()"><br><br>
+
+        <div id="partner_name_div" style="display: none;">
+            <label for="partner_name">Partner Name:</label>
+            <input type="text" id="partner_name" name="partner_name"><br><br>
+        </div>
+
+        <input type="submit" value="Create Persona">
+    </form>
+</body>
+</html>

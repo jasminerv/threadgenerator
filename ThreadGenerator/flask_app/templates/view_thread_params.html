@@ -1,0 +1,18 @@
+<!-- view_thread_params.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Thread Parameters</title>
+</head>
+<body>
+    <h1>Thread Parameters</h1>
+    <ul>
+        {% for thread_param in thread_params %}
+            <li>Thread: {{ thread_param.name_thread }} - Notebook: {{ thread_param.name_notebook }} - Max Notes per Day: {{ thread_param.max_notes_per_day }} - Total Months: {{ thread_param.thread_length_months }} - Description: {{ thread_param.thread_description}}</li>
+            <!-- Add more details as needed -->
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
