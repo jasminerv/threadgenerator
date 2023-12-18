@@ -4,3 +4,7 @@ Generate a thread of synthetic messages from the perspective of a specific perso
 ## Requirements
 ```
 ```
+## Set Up 
+
+
+## Using the Thread Generator
