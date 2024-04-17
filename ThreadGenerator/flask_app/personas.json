@@ -25,17 +25,3 @@
         "partnered": true,
         "partner_name": "Barney Catton"
     },
-    {
-        "name_first": "John",
-        "name_last": "Shmon",
-        "age": 47,
-        "place_residence": "Los Angeles, CA",
-        "place_birth": "Baton Rouge, LA",
-        "hobbies": "Cycling, reading ",
-        "personality_type": "energetic and action-oriented, deftly navigating whatever is in front of them. They love uncovering life\u2019s opportunities, whether socializing with others or in more personal pursuits",
-        "career": "Clown",
-        "career_state": "Late",
-        "partnered": true,
-        "partner_name": "Jane Doe"
-    }
-]
