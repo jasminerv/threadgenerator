@@ -1,5 +1,5 @@
 # threadgenerator
-Generate a thread of synthetic messages from the perspective of a specific persona writing every day for a selected number of months.
+A flask app you can use to generate a thread of synthetic messages from the perspective of a specific persona writing every day for a selected number of months.
 
 This program outputs a CSV of messages that are a cohesive thread on a specific topic in chronological order.
 
