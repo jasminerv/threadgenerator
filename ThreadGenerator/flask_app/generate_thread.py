@@ -150,13 +150,13 @@ def construct_prompt(persona, thread_params):
     prompt_elements = [
     ]
     prompt = " ".join(
-        prompt_elements) + f"You are {persona.name_first}  keeping personal notes. Write short message to yourself" \
+        prompt_elements) + f"You are {persona.name_first}  keeping personal notes. Write short message, between 2-3 sentences MAXIMUM to yourself" \
                            f" on " \
                            f"the following topic {thread_params.thread_description}. Imagine this is a note to self, " \
                            f"or as if you were just keeping track of your thoughts. Write in the first person." \
                            f"Do not write in the second person " \
-                           f"or address yourself by name. Limit your message to 2-4 sentences. Vary sentence length. Tone: " \
-                           f"Casual. DO NOT INCLUDE formal structure, greetings, dates, subject lines,titles, etc. "
+                           f"or address yourself by name. Tone: " \
+                           f"Casual. DO NOT INCLUDE formal structure, greetings, dates, subject lines,titles, etc. DO NOT BE OVERLY VERBOSE OR OVER 4 SENTENCES"
     return prompt
 
 
