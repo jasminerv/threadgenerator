@@ -16,7 +16,7 @@ python-dotenv
 ```
 ## Set Up 
 1. Clone this repo
-2. If you do not have an IDE, download PyCharm: https://www.jetbrains.com/pycharm/download/?section=mac
+2. If you do not have an IDE, download PyCharm, VSCode, or another IDE
 3. Set up a virtual environment 
 4. Download requirements 
 5. Add a .env file to the root file (ThreadGenerator) and add your OpenAI API key and a secret key for flask
