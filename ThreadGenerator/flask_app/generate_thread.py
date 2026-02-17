@@ -155,7 +155,7 @@ def construct_prompt(persona, thread_params):
                            f"the following topic {thread_params.thread_description}. Imagine this is a note to self, " \
                            f"or as if you were just keeping track of your thoughts. Write in the first person." \
                            f"Do not write in the second person " \
-                           f"or address yourself by name. Tone: " \
+                           f"or address yourself by name. Limit your message to 2-4 sentences. Vary sentence length. Tone: " \
                            f"Casual. DO NOT INCLUDE formal structure, greetings, dates, subject lines,titles, etc. "
     return prompt
 
